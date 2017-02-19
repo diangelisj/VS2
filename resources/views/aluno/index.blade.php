@@ -1,0 +1,1 @@
+@extends('aluno.layouts.index')
