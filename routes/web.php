@@ -24,6 +24,7 @@ Route::group(['prefix'=>'painel'],function(){
 
 // contato
 Route::resource('contact','ContactController');
+Route::resource('cadastros','CadastroController');
 
 
 Route::get('login', array('uses' => 'HomeController@showLogin'));

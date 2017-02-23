@@ -29,22 +29,30 @@
  <div class="col-sm-8">
 
 
-  <h3>Preencho o Formulário Abaixo para participar do curso :</h3>
+  <h3>Preencha o Formulário Abaixo para participar do curso :</h3>
    <div>
-     <form action="{{route('/cadastro.store')}}">
-       <input type="text" id="fname" name="firstname" value="CURSO A" disabled="yes">
-       <label for="fname">Nome:</label>
-       <input type="text" id="fname" name="firstname">
+      {!!Form::open(['url'=>'/cadastros/'])!!}
 
-       <label for="lname">Telefone:</label>
-       <input type="text" id="lname" name="lastname">
-
-       <label for="lname">Local de Trabalho:</label>
-       <input type="text" id="lname" name="lastname">
+       <input type="text" id="curso" name="curso" value="CURSO A" >
 
 
-       <input type="submit" value="Participar do Evento">
-     </form>
+
+
+       {!!Form::label('Nome:')!!}
+       {!!Form::text('nome',null,['class'=>'form-control'])!!}
+
+
+       {!!Form::label('Telefone:')!!}
+       {!!Form::text('telefone',null,['class'=>'form-control'])!!}
+
+
+       {!!Form::label('Local de Trabalho')!!}
+       {!!Form::text('local',null,['class'=>'form-control'])!!}
+
+
+    {!!Form::submit('Participar do Envento')!!}
+
+     {!!Form::close()!!}
    </div>
 
 

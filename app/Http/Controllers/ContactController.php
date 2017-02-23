@@ -1,8 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
-
+namespace App\Http\Controllers;
 use Illuminate\Http\Request;
+
+
+use App\Models\Contact;
+
 
 class ContactController extends Controller
 {
@@ -11,9 +15,14 @@ class ContactController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+
+
     public function index()
     {
         //
+
+
     }
 
     /**
@@ -23,7 +32,8 @@ class ContactController extends Controller
      */
     public function create()
     {
-        //
+
+      return view('site.contato.contato');
     }
 
     /**
@@ -35,6 +45,10 @@ class ContactController extends Controller
     public function store(Request $request)
     {
         //
+
+
+  
+          return view('site.contato.contato');
     }
 
     /**

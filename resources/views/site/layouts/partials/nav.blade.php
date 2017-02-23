@@ -73,7 +73,7 @@ input[type=submit] {
               <li><a href="{{url('instrutores')}}">INSTRUTORES</a></li>
               <li><a href="{{url('eventos')}}">EVENTOS</a></li>
               <li><a href="{{url('oferecemos')}}">OFERECEMOS A VOCÊ</a></li>
-              <li><a href="{{url('contato')}}">CONTATO</a></li>
+              <li><a href="{{route('contact.create')}}">CONTATO</a></li>
 
             </ul>
 

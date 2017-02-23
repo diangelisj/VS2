@@ -23,7 +23,7 @@
                     </div>
                     <div class="col-md-12">
                       <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Mensagem do Instrutor</button>
-                      <button type="button" class="btn  btn-success btn-lg"  onclick="window.location.href='/cadastro'" >Particiar do Evento</button>
+                      <button type="button" class="btn  btn-success btn-lg"  onclick="window.location.href='{{route('cadastros.create')}}'" >Particiar do Evento</button>
 
 
                     </div>
@@ -47,7 +47,7 @@
          <h4 class="modal-title">Mensagem do Instutor</h4>
        </div>
        <div class="modal-body">
-           
+
            <div class="embed-responsive embed-responsive-16by9">
     <iframe class="embed-responsive-item" width="640" height="480" src="https://www.youtube.com/embed/qOWcATcab7Q?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 </div>
